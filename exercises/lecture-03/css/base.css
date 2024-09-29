@@ -1,0 +1,9 @@
+/*base.css*/
+
+html {
+    --accentcolor: red; 
+}
+
+a {
+    --accentColorMuted: hsl(300, 40%, 40%);
+}

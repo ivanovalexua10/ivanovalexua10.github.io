@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 3</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+		p {
+			color: red;
+		}
+	</style>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 4.Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому.
+      Додайте тут елеиент style: 
+    <style type="text/css">
+    	
+    	body {
+			background: var(--bgColor);
+		}
+
+		div {
+			--bgColor: limegreen;
+		}
+    
+		/*
+		 визначте для елементів p властивість фону таким чином:
+			background: var(--bgColor);
+		*/
+    </style>
+    
+    У цьому фрагменті CSS змінна --bgColor, яка оголошена всередині елемента div, не буде видимою для елемента body. 
+    Це відбувається через те, що змінні CSS мають область видимості в межах елемента, де вони оголошені, і його дочірніх елементів.
+    
+    -->
+    <style type="text/css">
+        body {
+            background: var(--bgColor);
+        }
+    
+        div {
+            --bgColor: limegreen;
+        }
+    
+        /* Додаємо властивість фону для елементів <p> */
+        p {
+            background: var(--bgColor);
+        }
+    </style>
+</head>
+<body>
+    <p style="color: blue;"> This is my paragraph</p>
+
+    <!--який колір буде мати текст This is my paragraph і чому.
+    
+    Текст буде синім. Тому що інлайн-стилі (color: blue), визначені в атрибуті style, мають вищий пріоритет над стилями, оголошеними в тегу <style>
+    -->
+
+    <!--3.У наступному фпагменті випрвити помилки -->
+<div>
+ <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+
+ <p id="exciting-paragraph">The most exciting paragraph on the page. One of a kind!</p>
+
+ <p id="exciting-div">The most exciting paragraph on the page. One of a kind!</div>
+
+ <style>
+     #exciting-paragraph, #exciting-div  {
+         background: #f69d3c;
+         border: 1px solid #696969;
+         padding: 10px;
+     }
+ </style>
+ </div>
+ <div>
+    <h3>Div 1</h3>
+    <p>Paragraph 1</p>
+</div>
+
+<div>
+    <h3>Div 2</h3>
+    <p>Paragraph 2</p>
+</div>
+
+
+
+</body>
+<footer>
+    <!-- створити тут секцію -->
+    <section>
+      
+      <!-- створити тут div -->
+      <div>
+        <h2>About</h2>
+        <!-- створити тут невпорядкований список з такмсм елементами -->
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+  
+      <!-- створити тут div -->
+      <div>
+        <h2>Resources</h2>
+        <!-- створити тут невпорядкований список з такмсм елементами -->
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">eBooks</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+  
+      <!-- створити тут div -->
+      <div>
+        <h2>Contact</h2>
+        <!-- створити тут невпорядкований список з такмсм елементами -->
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- Footer legal -->
+    <section>
+      <!-- створити тут невпорядкований список з такмсм елементами -->
+      <ul>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+      </ul>
+    </section>
+  </footer>
+</html>
+
+ 
+
+    <!--Тут було виправлено дві помилки. 1. Ідентифікатор має бути ункальним. Я змінив їх на exciting-paragraph для першого речення, та на exciting-div для другого.
+    В <style> змінив значення id, для того щоб стилі були застосовані до обох елементів.
+
+    Також стосовно   <div id="exciting">The most exciting paragraph on the page. One of a kind!</div> - якщо тут мова йшла саме про текст, я би розмістив його в блочному елементі тегу <p>
+
+
+    4. Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. -->
+
+ <!--6. Виправити помилку у фпагменті 
+ 
+ 	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* more styles */
+	@import url("my-imported-styles.css");
+
+    Правило імпорт оголошується на початку і має виглядати так: 
+
+    @import url("my-imported-styles.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ -->

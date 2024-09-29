@@ -1,0 +1,15 @@
+/* main.css */
+
+@import url('base.css');
+
+/*root*/
+
+
+
+h1 {
+    color: var(--accentcolor);
+}
+
+a {
+    color: var(--accentColorMuted);
+}
