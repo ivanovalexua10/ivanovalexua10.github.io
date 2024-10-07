@@ -1,0 +1,43 @@
+/*main.css*/
+
+.body {
+    background: linear-gradient(
+        to right, 
+        lightgreen 5%, 
+        #80c080 17%, 
+        #60a060 40%, 
+        #408040 85%, 
+        darkgreen 95%
+    );
+}
+
+.negative {
+    background: linear-gradient(
+        to left,
+        lightblue -50%, 
+        #66b2ff -10%, 
+        #3399ff 0%, 
+        #0066cc 100%, 
+        darkblue 150%
+    );
+}
+
+.percents {
+    background: linear-gradient(
+        to bottom,
+        lightgreen 2em, 
+        #80c080 4em, 
+        #60a060 8em, 
+        #408040 16em, 
+        #306030 32em, 
+        #204020 64em, 
+        darkgreen 128em
+    );
+}
+
+.radial {
+    background: 
+        
+        radial-gradient(ellipse at bottom, orange, transparent),
+        radial-gradient(ellipse at top, red, transparent);
+}
